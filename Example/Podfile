@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KFXUtilities_Example' do
+  pod 'KFXUtilities', :path => '../'
+
+  target 'KFXUtilities_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
