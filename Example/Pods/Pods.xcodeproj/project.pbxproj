@@ -18,6 +18,8 @@
 		D1256E560586EF8080271BE1DC701A22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		DB500F241DB6928000B76BE4 /* KFXGeoLocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DB500F221DB6928000B76BE4 /* KFXGeoLocationHelper.h */; };
 		DB500F251DB6928000B76BE4 /* KFXGeoLocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DB500F231DB6928000B76BE4 /* KFXGeoLocationHelper.m */; };
+		DB500F281DB6929800B76BE4 /* KFXMaths.h in Headers */ = {isa = PBXBuildFile; fileRef = DB500F261DB6929800B76BE4 /* KFXMaths.h */; };
+		DB500F291DB6929800B76BE4 /* KFXMaths.m in Sources */ = {isa = PBXBuildFile; fileRef = DB500F271DB6929800B76BE4 /* KFXMaths.m */; };
 		E19C0E0550A3EB9BC87BB6749C22E839 /* KFXUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31744BB0EB3A2D6CF264CC8B0082A11B /* KFXUtilities-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		D337376AE80E2DFF5183618695E7EFF9 /* Pods-KFXUtilities_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXUtilities_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DB500F221DB6928000B76BE4 /* KFXGeoLocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFXGeoLocationHelper.h; sourceTree = "<group>"; };
 		DB500F231DB6928000B76BE4 /* KFXGeoLocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFXGeoLocationHelper.m; sourceTree = "<group>"; };
+		DB500F261DB6929800B76BE4 /* KFXMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFXMaths.h; sourceTree = "<group>"; };
+		DB500F271DB6929800B76BE4 /* KFXMaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFXMaths.m; sourceTree = "<group>"; };
 		DC2B4756BF13AD5BAFB3F8795EB3DF98 /* Pods-KFXUtilities_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXUtilities_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC8F5787B7CC8709C3A510DFDC600CD4 /* Pods-KFXUtilities_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KFXUtilities_Example-dummy.m"; sourceTree = "<group>"; };
 		E584406B7AFC40060F70EA49D23C12BD /* Pods-KFXUtilities_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KFXUtilities_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				4D2AFEFA4B6B27D8221528BD9C17C002 /* ReplaceMe.m */,
+				DB500F261DB6929800B76BE4 /* KFXMaths.h */,
+				DB500F271DB6929800B76BE4 /* KFXMaths.m */,
 				DB500F221DB6928000B76BE4 /* KFXGeoLocationHelper.h */,
 				DB500F231DB6928000B76BE4 /* KFXGeoLocationHelper.m */,
 			);
@@ -245,6 +251,7 @@
 			files = (
 				0F535C513B803FADE9E1D27D3B552067 /* KFXUtilities-umbrella.h in Headers */,
 				DB500F241DB6928000B76BE4 /* KFXGeoLocationHelper.h in Headers */,
+				DB500F281DB6929800B76BE4 /* KFXMaths.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +362,7 @@
 				E19C0E0550A3EB9BC87BB6749C22E839 /* KFXUtilities-dummy.m in Sources */,
 				DB500F251DB6928000B76BE4 /* KFXGeoLocationHelper.m in Sources */,
 				B2906A6EFDE7C8130FD4F211C7F55324 /* ReplaceMe.m in Sources */,
+				DB500F291DB6929800B76BE4 /* KFXMaths.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
