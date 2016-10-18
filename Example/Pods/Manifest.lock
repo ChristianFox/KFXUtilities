@@ -1,0 +1,16 @@
+PODS:
+  - KFXUtilities (0.1.0)
+
+DEPENDENCIES:
+  - KFXUtilities (from `../`)
+
+EXTERNAL SOURCES:
+  KFXUtilities:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KFXUtilities: 5eb3a54edba9425b58b665ab4a58b32126afa56b
+
+PODFILE CHECKSUM: 00d0734f7dc06e024177f7c9ea1de91c58b919dc
+
+COCOAPODS: 1.1.0.rc.2

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'KFXUtilities'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KFXUtilities.'
+  s.summary          = 'Some utility and helper classes.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A collection of Utility and helper classes.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/KFXUtilities'
+  s.homepage         = 'https://kfxtech@bitbucket.org/kfxteam/kfxutilities_podprivate.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Christian Fox' => 'christianfox890@icloud.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/KFXUtilities.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://kfxtech@bitbucket.org/kfxteam/kfxutilities_podprivate.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
