@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KFXUtilities'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'Some utility and helper classes.'
 
 # This description is used to generate tags and improve search results.
