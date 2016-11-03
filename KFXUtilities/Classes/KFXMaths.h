@@ -1,7 +1,7 @@
 
 
 //-----------------------------------------------------------
-#pragma mark - Float equality
+#pragma mark - Float & Double equality
 //-----------------------------------------------------------
 #define fequal(a,b) (fabsf((a) - (b)) < FLT_EPSILON)
 #define fequalzero(a) (fabsf(a) < FLT_EPSILON)
@@ -11,16 +11,16 @@
 //--------------------------------------------------------
 #pragma mark - GeoLocation Constants
 //--------------------------------------------------------
-extern double const kMetresInLatitudeDegree;
-extern double const kMetresInLongitudeDegree;
-extern double const kLatitudeDegreesInMetre;
-extern double const kLongitudeDegreesInMetre;
+extern double const kMetresPerDegreeLatitude;
+extern double const kMetresPerDegreeLongitude;
+extern double const kDegreesPerMetreLatitude;
+extern double const kDegreesPerMetreLongitude;
 
-extern double const kFeetInMile;
-extern double const kMetresInMile;
-extern double const kFeetInKilometre;
-extern double const kKilometresInMile;
-extern double const kMilesInKilometre;
+extern double const kFeetPerMile;
+extern double const kMetresPerMile;
+extern double const kFeetPerKilometre;
+extern double const kKilometresPerMile;
+extern double const kMilesPerKilometre;
 
 #import <Foundation/Foundation.h>
 
