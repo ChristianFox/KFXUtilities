@@ -8,19 +8,6 @@
 #define dequal(a,b) (fabs((a) - (b)) < DBL_EPSILON)
 #define dequalzero(a) (fabs(a) < DBL_EPSILON)
 
-//--------------------------------------------------------
-#pragma mark - GeoLocation Constants
-//--------------------------------------------------------
-extern double const kMetresPerDegreeLatitude;
-extern double const kMetresPerDegreeLongitude;
-extern double const kDegreesPerMetreLatitude;
-extern double const kDegreesPerMetreLongitude;
-
-extern double const kFeetPerMile;
-extern double const kMetresPerMile;
-extern double const kFeetPerKilometre;
-extern double const kKilometresPerMile;
-extern double const kMilesPerKilometre;
 
 #import <Foundation/Foundation.h>
 

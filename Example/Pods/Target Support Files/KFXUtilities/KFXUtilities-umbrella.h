@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 
+#import "KFXCommonConstants.h"
 #import "KFXCommonDefinitions.h"
 #import "KFXFileHelper.h"
 #import "KFXGeoLocationHelper.h"

@@ -4,6 +4,7 @@
 #import <XCTest/XCTest.h>
 #import <KFXUtilities/KFXGeoLocationHelper.h>
 #import <KFXUtilities/KFXMaths.h>
+#import <KFXUtilities/KFXCommonConstants.h>
 
 @interface KFXGeoLocationHelperTests : XCTestCase
 @property (strong,nonatomic) KFXGeoLocationHelper *sut;
@@ -25,10 +26,134 @@
 //--------------------------------------------------------
 #pragma mark - Test Initiliser
 //--------------------------------------------------------
-
 -(void)testGeoLocationHelperConvienenceInitiliser{
     XCTAssertNotNil(self.sut);
 }
+
+//======================================================
+#pragma mark - ** Coordinates **
+//======================================================
+//--------------------------------------------------------
+#pragma mark - -coordinatesFromCoordinates:withLatitudeAdjustmentByDegrees:
+//--------------------------------------------------------
+-(void)testCoordinatesWithDegreesAdjustment_WithInvalidCoordinates_ShouldReturnInvalid{
+    
+    CLLocationCoordinate2D originalCoord = kCLLocationCoordinate2DInvalid;
+    CLLocationDegrees latAdjust = 10.0;
+    CLLocationDegrees longAdjust = 10.0;
+    CLLocationCoordinate2D newCoord = [self.sut coordinatesFromCoordinates:originalCoord
+                                           withLatitudeAdjustmentByDegrees:latAdjust
+                                              longitudeAdjustmentByDegrees:longAdjust];
+    XCTAssertFalse(CLLocationCoordinate2DIsValid(newCoord));
+}
+
+-(void)testCoordinatesWithDegreesAdjustment_WithInvalidLatitude_ShouldReturnInvalid{
+    
+    CLLocationCoordinate2D originalCoord = CLLocationCoordinate2DMake(0.0, 0.0);
+    CLLocationDegrees latAdjust = 100.0;
+    CLLocationDegrees longAdjust = 10.0;
+    CLLocationCoordinate2D newCoord = [self.sut coordinatesFromCoordinates:originalCoord
+                                           withLatitudeAdjustmentByDegrees:latAdjust
+                                              longitudeAdjustmentByDegrees:longAdjust];
+    XCTAssertFalse(CLLocationCoordinate2DIsValid(newCoord));
+}
+
+-(void)testCoordinatesWithDegreesAdjustment_WithInvalidLongitiude_ShouldReturnInvalid{
+    
+    CLLocationCoordinate2D originalCoord = CLLocationCoordinate2DMake(0.0, 0.0);
+    CLLocationDegrees latAdjust = 10.0;
+    CLLocationDegrees longAdjust = 181.0;
+    CLLocationCoordinate2D newCoord = [self.sut coordinatesFromCoordinates:originalCoord
+                                           withLatitudeAdjustmentByDegrees:latAdjust
+                                              longitudeAdjustmentByDegrees:longAdjust];
+    XCTAssertFalse(CLLocationCoordinate2DIsValid(newCoord));
+}
+
+-(void)testCoordinatesWithDegreesAdjustment_WithValidPositiveArguments_ShouldReturnValidCoordinates{
+    
+    CLLocationCoordinate2D originalCoord = CLLocationCoordinate2DMake(0.0, 0.0);
+    CLLocationDegrees latAdjust = 90.000;
+    CLLocationDegrees longAdjust = 180.0000;
+    CLLocationCoordinate2D newCoord = [self.sut coordinatesFromCoordinates:originalCoord
+                                           withLatitudeAdjustmentByDegrees:latAdjust
+                                              longitudeAdjustmentByDegrees:longAdjust];
+    XCTAssertTrue(CLLocationCoordinate2DIsValid(newCoord));
+}
+
+-(void)testCoordinatesWithDegreesAdjustment_WithValidNegativeArguments_ShouldReturnValidCoordinates{
+    
+    CLLocationCoordinate2D originalCoord = CLLocationCoordinate2DMake(0.0, 0.0);
+    CLLocationDegrees latAdjust = -90.000;
+    CLLocationDegrees longAdjust = -180.0000;
+    CLLocationCoordinate2D newCoord = [self.sut coordinatesFromCoordinates:originalCoord
+                                           withLatitudeAdjustmentByDegrees:latAdjust
+                                              longitudeAdjustmentByDegrees:longAdjust];
+    XCTAssertTrue(CLLocationCoordinate2DIsValid(newCoord));
+}
+
+
+
+
+
+
+//--------------------------------------------------------
+#pragma mark - -coordinatesFromCoordinates:withLatitudeAdjustmentByMetres:
+//--------------------------------------------------------
+-(void)testCoordinatesWithMetresAdjustment_WithInvalidCoordinates_ShouldReturnInvalid{
+    
+    CLLocationCoordinate2D originalCoord = kCLLocationCoordinate2DInvalid;
+    double latAdjust = 100.0;
+    double longAdjust = 100.0;
+    CLLocationCoordinate2D newCoord = [self.sut coordinatesFromCoordinates:originalCoord
+                                           withLatitudeAdjustmentByMetres:latAdjust
+                                              longitudeAdjustmentByMetres:longAdjust];
+    XCTAssertFalse(CLLocationCoordinate2DIsValid(newCoord));
+}
+
+-(void)testCoordinatesWithMetresAdjustment_WithInvalidLatitude_ShouldReturnInvalid{
+    
+    CLLocationCoordinate2D originalCoord = CLLocationCoordinate2DMake(0.0, 0.0);
+    double latAdjust = 90.1*kMetresPerDegreeLatitude;
+    double longAdjust = 100.0;
+    CLLocationCoordinate2D newCoord = [self.sut coordinatesFromCoordinates:originalCoord
+                                            withLatitudeAdjustmentByMetres:latAdjust
+                                               longitudeAdjustmentByMetres:longAdjust];
+    XCTAssertFalse(CLLocationCoordinate2DIsValid(newCoord));
+}
+
+-(void)testCoordinatesWithMetresAdjustment_WithInvalidLongitude_ShouldReturnInvalid{
+    
+    CLLocationCoordinate2D originalCoord = CLLocationCoordinate2DMake(0.0, 0.0);
+    double latAdjust = 10.0;
+    double longAdjust = 180.1*kMetresPerDegreeLongitude;
+    CLLocationCoordinate2D newCoord = [self.sut coordinatesFromCoordinates:originalCoord
+                                            withLatitudeAdjustmentByMetres:latAdjust
+                                               longitudeAdjustmentByMetres:longAdjust];
+    XCTAssertFalse(CLLocationCoordinate2DIsValid(newCoord));
+}
+
+-(void)testCoordinatesWithMetresAdjustment_WithValidPositiveArguments_ShouldReturnValidCoordinates{
+    
+    CLLocationCoordinate2D originalCoord = CLLocationCoordinate2DMake(0.0, 0.0);
+    double latAdjust = 89.9*kMetresPerDegreeLatitude;
+    double longAdjust = 179.9*kMetresPerDegreeLongitude;
+    CLLocationCoordinate2D newCoord = [self.sut coordinatesFromCoordinates:originalCoord
+                                            withLatitudeAdjustmentByMetres:latAdjust
+                                               longitudeAdjustmentByMetres:longAdjust];
+    XCTAssertTrue(CLLocationCoordinate2DIsValid(newCoord));
+}
+
+-(void)testCoordinatesWithMetresAdjustment_WithValidNegativeArguments_ShouldReturnValidCoordinates{
+    
+    CLLocationCoordinate2D originalCoord = CLLocationCoordinate2DMake(0.0, 0.0);
+    double latAdjust = -89.9*kMetresPerDegreeLatitude;
+    double longAdjust = -179.9*kMetresPerDegreeLongitude;
+    CLLocationCoordinate2D newCoord = [self.sut coordinatesFromCoordinates:originalCoord
+                                            withLatitudeAdjustmentByMetres:latAdjust
+                                               longitudeAdjustmentByMetres:longAdjust];
+    XCTAssertTrue(CLLocationCoordinate2DIsValid(newCoord));
+}
+
 
 
 //======================================================

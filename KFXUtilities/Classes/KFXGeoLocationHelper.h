@@ -13,6 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 //--------------------------------------------------------
+#pragma mark - Coordinates
+//--------------------------------------------------------
+-(CLLocationCoordinate2D)coordinatesFromCoordinates:(CLLocationCoordinate2D)originalCoordinates
+                    withLatitudeAdjustmentByDegrees:(CLLocationDegrees)latitudeAdjustment
+                       longitudeAdjustmentByDegrees:(CLLocationDegrees)longitudeAdjustment;
+-(CLLocationCoordinate2D)coordinatesFromCoordinates:(CLLocationCoordinate2D)originalCoordinates
+                     withLatitudeAdjustmentByMetres:(double)latitudeAdjustment
+                        longitudeAdjustmentByMetres:(double)longitudeAdjustment;
+
+//--------------------------------------------------------
 #pragma mark - Data from an NSArray of CLLocations
 //--------------------------------------------------------
 #pragma mark Distance

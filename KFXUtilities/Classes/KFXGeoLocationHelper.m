@@ -1,6 +1,7 @@
 
 
 #import "KFXGeoLocationHelper.h"
+#import "KFXCommonConstants.h"
 
 @implementation KFXGeoLocationHelper
 
@@ -11,6 +12,39 @@
     
     KFXGeoLocationHelper *helper = [[self alloc]init];
     return helper;
+}
+
+
+//--------------------------------------------------------
+#pragma mark - Coordinates
+//--------------------------------------------------------
+-(CLLocationCoordinate2D)coordinatesFromCoordinates:(CLLocationCoordinate2D)originalCoordinates
+                    withLatitudeAdjustmentByDegrees:(CLLocationDegrees)latitudeAdjustment
+                       longitudeAdjustmentByDegrees:(CLLocationDegrees)longitudeAdjustment{
+    
+    if (!CLLocationCoordinate2DIsValid(originalCoordinates)) {
+        return kCLLocationCoordinate2DInvalid;
+    }
+    CLLocationDegrees newLat = originalCoordinates.latitude + latitudeAdjustment;
+    CLLocationDegrees newLong = originalCoordinates.longitude + longitudeAdjustment;
+    if (newLat > 90.000000000000 || newLat < -90.000000000000) {
+        return kCLLocationCoordinate2DInvalid;
+    }else if (newLong > 180.000000000000 || newLong < -180.000000000000){
+        return kCLLocationCoordinate2DInvalid;
+    }
+    
+    return CLLocationCoordinate2DMake(newLat, newLong);
+}
+
+-(CLLocationCoordinate2D)coordinatesFromCoordinates:(CLLocationCoordinate2D)originalCoordinates
+                     withLatitudeAdjustmentByMetres:(double)latitudeAdjustment
+                        longitudeAdjustmentByMetres:(double)longitudeAdjustment{
+    
+    CLLocationDegrees latDegrees = latitudeAdjustment * kDegreesPerMetreLatitude;
+    CLLocationDegrees longDegrees = longitudeAdjustment * kDegreesPerMetreLongitude;
+    return [self coordinatesFromCoordinates:originalCoordinates
+            withLatitudeAdjustmentByDegrees:latDegrees
+               longitudeAdjustmentByDegrees:longDegrees];
 }
 
 

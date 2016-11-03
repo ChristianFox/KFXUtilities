@@ -1,6 +1,13 @@
 
 # ChangeLog - KFXUtilities
 
+## 0.5.0
+- Adds methods to KFXGeoLocationHelper to create one CLLocationCoordinate2d from another and adjust the lat & long of the new one in either degrees or metres
+- Creates KFXCommonConstants and moves constants from KFXMaths to there
+
+## 0.4.1
+- Fixes error with constants in KFXMaths
+
 ## 0.4.0
 ### KFXGeoLocationHelper
 - Adds many methods: -totalDistance..., -speedBetweenLocations..., -sortLocationChronologically etc
