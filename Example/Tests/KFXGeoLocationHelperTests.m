@@ -707,6 +707,7 @@
     CLCircularRegion *region = [[CLCircularRegion alloc]initWithCenter:coord
                                                                 radius:10000.0
                                                             identifier:@"testRegion"];
+    
     CLLocation *location1 = [self locationWithLatitude:0.00000
                                              longitude:0.00000
                                   timeIntervalSinceNow:0.00000];

@@ -9,7 +9,6 @@ NS_ASSUME_NONNULL_BEGIN
 //--------------------------------------------------------
 #pragma mark - Initilisers
 //--------------------------------------------------------
--(instancetype)init;
 +(instancetype)geoLocationHelper;
 
 

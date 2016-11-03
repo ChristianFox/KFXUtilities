@@ -13,7 +13,7 @@ typedef void(^KFXNSDataResultBlock)(NSData *_Nullable data, NSError *_Nullable e
 typedef void(^KFXNSStringResultBlock)(NSString *_Nullable string, NSError *_Nullable error);
 typedef void(^KFXNSNumberResultBlock)(NSNumber *_Nullable number, NSError *_Nullable error);
 typedef void(^KFXNSIntegerResultBlock)(NSInteger integer, NSError *_Nullable error);
-typedef void(^KFXNSUnsignedIntegerResultBlock)(NSUnsignedInteger uInteger, NSError *_Nullable error);
+typedef void(^KFXNSUnsignedIntegerResultBlock)(NSUInteger uInteger, NSError *_Nullable error);
 
 
 
