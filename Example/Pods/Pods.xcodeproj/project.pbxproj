@@ -21,6 +21,7 @@
 		CBF847FCD5A794E5E53F204C33711277 /* KFXMaths.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B846B5F822B26D70A8CDFB885249A /* KFXMaths.m */; };
 		CCECA9E8C5E0A68D6FAC53F55F1296B0 /* KFXGeoLocationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A067CDE84F6B5063584AAC3B23FA952F /* KFXGeoLocationHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1256E560586EF8080271BE1DC701A22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		DB88D6D91DCB4F5F00A205EB /* KFXCommonDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = DB88D6D81DCB4F5F00A205EB /* KFXCommonDefinitions.h */; };
 		EA22657BD541927D32B84C047E445318 /* KFXUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31744BB0EB3A2D6CF264CC8B0082A11B /* KFXUtilities-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		D2938AA378FF752CD9812A5A3A5F0150 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D337376AE80E2DFF5183618695E7EFF9 /* Pods-KFXUtilities_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXUtilities_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D98B846B5F822B26D70A8CDFB885249A /* KFXMaths.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KFXMaths.m; sourceTree = "<group>"; };
+		DB88D6D81DCB4F5F00A205EB /* KFXCommonDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFXCommonDefinitions.h; sourceTree = "<group>"; };
 		DC2B4756BF13AD5BAFB3F8795EB3DF98 /* Pods-KFXUtilities_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KFXUtilities_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC8F5787B7CC8709C3A510DFDC600CD4 /* Pods-KFXUtilities_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KFXUtilities_Example-dummy.m"; sourceTree = "<group>"; };
 		E584406B7AFC40060F70EA49D23C12BD /* Pods-KFXUtilities_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KFXUtilities_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		865B37C79E84F4C47D257622169F061B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DB88D6D81DCB4F5F00A205EB /* KFXCommonDefinitions.h */,
 				89205B9CE7DADB3AE804511A7CF8FD09 /* KFXFileHelper.h */,
 				B25E3F7906D7785FA8F62E36CA7C0D32 /* KFXFileHelper.m */,
 				A067CDE84F6B5063584AAC3B23FA952F /* KFXGeoLocationHelper.h */,
@@ -244,6 +247,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB88D6D91DCB4F5F00A205EB /* KFXCommonDefinitions.h in Headers */,
 				962E78259C7AE2AD8669A6DA3501D37D /* KFXFileHelper.h in Headers */,
 				CCECA9E8C5E0A68D6FAC53F55F1296B0 /* KFXGeoLocationHelper.h in Headers */,
 				B42E55B22CF42F11619E5CBC352FC767 /* KFXMaths.h in Headers */,
