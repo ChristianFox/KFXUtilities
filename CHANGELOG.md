@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXUtilities
 
+## 0.5.1
+- No changes just re-adding to repo as new version becuase new classes are not available when pod added to a project
+
 ## 0.5.0
 - Adds methods to KFXGeoLocationHelper to create one CLLocationCoordinate2d from another and adjust the lat & long of the new one in either degrees or metres
 - Creates KFXCommonConstants and moves constants from KFXMaths to there
