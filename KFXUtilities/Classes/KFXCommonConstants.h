@@ -19,6 +19,8 @@ extern double const kFeetPerKilometre;
 extern double const kKilometresPerMile;
 extern double const kMilesPerKilometre;
 
+extern double const kDegreesToRadians;
+extern double const kRadiansToDegrees;
 
 
 

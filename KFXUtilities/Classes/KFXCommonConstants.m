@@ -21,7 +21,8 @@ double const kFeetPerKilometre = 3280.838879986877;
 double const kKilometresPerMile = 1.60934;
 double const kMilesPerKilometre = 0.621371;
 
-
+double const kDegreesToRadians = M_PI / 180.0;
+double const kRadiansToDegrees = 180.0 / M_PI;
 
 
 @end

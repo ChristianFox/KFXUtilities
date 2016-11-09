@@ -29,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(CLLocationDistance)totalDistanceFromLocations:(NSArray<CLLocation*>*)locations;
 -(CLLocationDistance)shortestDistanceBetweenTwoLocationsFromLocations:(NSArray<CLLocation*>*)locations;
 -(CLLocationDistance)longestDistanceBetweenTwoLocationsFromLocations:(NSArray<CLLocation*>*)locations;
+-(CLLocationDistance)distanceBetweenCoordinate:(CLLocationCoordinate2D)coordA andCoordinate:(CLLocationCoordinate2D)coordB;
 
 #pragma mark Average Speed
 -(CLLocationSpeed)averageSpeedReadFromLocations:(NSArray<CLLocation*>*)locations;

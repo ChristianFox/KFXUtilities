@@ -116,8 +116,37 @@
     
     NSArray<NSNumber*> *sortedDistances = [longDistances sortedArrayUsingSelector:@selector(compare:)];
     return [sortedDistances.lastObject doubleValue];
+}
+
+-(CLLocationDistance)distanceBetweenCoordinate:(CLLocationCoordinate2D)coordA andCoordinate:(CLLocationCoordinate2D)coordB{
+    
+    /*
+     From
+     //  CLLocation+measuring.h
+     //  StreetWise
+     //
+     //  Created by Rotem Rubnov on 4/5/2011.
+     //  Copyright 2011 100 grams. All rights reserved.
+     // https://github.com/100grams/CoreLocationUtils
+     */
+    double earthRadius = 6371.01; // Earth's radius in Kilometers
+    
+    // Get the difference between our two points then convert the difference into radians
+    double nDLat = (coordA.latitude - coordB.latitude) * kDegreesToRadians;
+    double nDLon = (coordA.longitude - coordB.longitude) * kDegreesToRadians;
+    
+    double fromLat =  coordB.latitude * kDegreesToRadians;
+    double toLat =  coordA.latitude * kDegreesToRadians;
+    
+    double nA =	pow ( sin(nDLat/2), 2 ) + cos(fromLat) * cos(toLat) * pow ( sin(nDLon/2), 2 );
+    
+    double nC = 2 * atan2( sqrt(nA), sqrt( 1 - nA ));
+    double nD = earthRadius * nC;
+    
+    return nD * 1000; // Return our calculated distance in meters
     
 }
+
 
 #pragma mark Average Speed
 -(CLLocationSpeed)averageSpeedReadFromLocations:(NSArray<CLLocation*>*)locations{
