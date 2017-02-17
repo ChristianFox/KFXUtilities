@@ -16,6 +16,8 @@
 		379E277639D46336A89D14AAA9DC6FF5 /* Pods-KFXUtilities_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 664AA7173BAAB7BD53C4608F4D1D1F33 /* Pods-KFXUtilities_Tests-dummy.m */; };
 		42CD04FDEE6B93BBCC0B15E6FA02ED67 /* Pods-KFXUtilities_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB78DDF8E9ED2F3979C6EBB75351E05F /* Pods-KFXUtilities_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B1E2AB68086A52124E074CF8ED07208 /* KFXUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31744BB0EB3A2D6CF264CC8B0082A11B /* KFXUtilities-dummy.m */; };
+		5B3B02661E5738CA00AFF3B1 /* KFXPhotoPickerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B3B02641E5738CA00AFF3B1 /* KFXPhotoPickerManager.h */; };
+		5B3B02671E5738CA00AFF3B1 /* KFXPhotoPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B3B02651E5738CA00AFF3B1 /* KFXPhotoPickerManager.m */; };
 		60A6EB60CF39D2E4B3F5527989858B91 /* KFXUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F6C3406E6ACF0E8C6FC1A2CB39B0CA3 /* KFXUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0EE9AE31F6F3F67C8D1B92B2EE86439 /* KFXFileHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 821D1947FF0237D207B8FE64A3B57ED6 /* KFXFileHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6145D5368626E477E4442BE0367F8B8 /* Pods-KFXUtilities_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8F5787B7CC8709C3A510DFDC600CD4 /* Pods-KFXUtilities_Example-dummy.m */; };
@@ -49,6 +51,8 @@
 		3DBFA0C9BD04199D35A57D37B954FB86 /* Pods-KFXUtilities_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KFXUtilities_Tests-resources.sh"; sourceTree = "<group>"; };
 		449D8FFCE7C1ACDF3C14D89E0ADC8EF5 /* Pods_KFXUtilities_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXUtilities_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2193668AA607B79774D495932B022A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B3B02641E5738CA00AFF3B1 /* KFXPhotoPickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFXPhotoPickerManager.h; sourceTree = "<group>"; };
+		5B3B02651E5738CA00AFF3B1 /* KFXPhotoPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFXPhotoPickerManager.m; sourceTree = "<group>"; };
 		5F452D382D849732EFD040819FD1EE13 /* Pods_KFXUtilities_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXUtilities_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664AA7173BAAB7BD53C4608F4D1D1F33 /* Pods-KFXUtilities_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KFXUtilities_Tests-dummy.m"; sourceTree = "<group>"; };
 		68C521867C68ED0BE385B0BC000C66AE /* Pods-KFXUtilities_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KFXUtilities_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 		3BAFD915EB4F6B9973C8F0EB4781E56D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5B3B02641E5738CA00AFF3B1 /* KFXPhotoPickerManager.h */,
+				5B3B02651E5738CA00AFF3B1 /* KFXPhotoPickerManager.m */,
 				FA81F2D666B7120A80CEB79D09181A73 /* KFXCommonConstants.h */,
 				B8DAD972C66D5BD3CE4698B6F00D54E4 /* KFXCommonConstants.m */,
 				99C4D7E0550D76881E4A568B70DADC6B /* KFXCommonDefinitions.h */,
@@ -269,6 +275,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3B02661E5738CA00AFF3B1 /* KFXPhotoPickerManager.h in Headers */,
 				DD35AC1CDEF27A452295E9E72A7A0423 /* KFXCommonConstants.h in Headers */,
 				2051B1E43DB0A7C51EB9C8489DA53099 /* KFXCommonDefinitions.h in Headers */,
 				A0EE9AE31F6F3F67C8D1B92B2EE86439 /* KFXFileHelper.h in Headers */,
@@ -376,6 +383,7 @@
 			files = (
 				BD39BEBCE434D01D237C493F821758E8 /* KFXCommonConstants.m in Sources */,
 				1FA2DF7FDC11B2BD0FD73C7BC9DC01FA /* KFXFileHelper.m in Sources */,
+				5B3B02671E5738CA00AFF3B1 /* KFXPhotoPickerManager.m in Sources */,
 				365E371AA7CE16914E2C5931C923D5F7 /* KFXGeoLocationHelper.m in Sources */,
 				D47BB8468D475C36EDCB2669F0A138C6 /* KFXMaths.m in Sources */,
 				5B1E2AB68086A52124E074CF8ED07208 /* KFXUtilities-dummy.m in Sources */,

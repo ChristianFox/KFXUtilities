@@ -1,6 +1,12 @@
 
 # ChangeLog - KFXUtilities
 
+## 0.7.0
+- Adds KFXPhotoPickerManager
+
+## 0.6.0
+- Adds -distanceBetweenCoordinates method to KFXGeoLocationHelper
+
 ## 0.5.1
 - No changes just re-adding to repo as new version becuase new classes are not available when pod added to a project
 
