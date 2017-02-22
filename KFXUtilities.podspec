@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KFXUtilities'
-  s.version          = '0.7.0'
+  s.version          = '0.9.0'
   s.summary          = 'Some utility and helper classes.'
 
 # This description is used to generate tags and improve search results.
@@ -38,5 +38,5 @@ A collection of Utility and helper classes.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'KFXAdditions'
 end

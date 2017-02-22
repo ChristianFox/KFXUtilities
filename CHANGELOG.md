@@ -1,6 +1,12 @@
 
 # ChangeLog - KFXUtilities
 
+## 0.9.0
+- Adds KFXLocationTracker
+
+## 0.8.0
+- Adds KFXCellularViewData, KFXCollectionViewData, KFXTableViewData, KFXSectionData, KFXCellData etc
+
 ## 0.7.0
 - Adds KFXPhotoPickerManager
 

@@ -1,6 +1,6 @@
 {
   "name": "KFXUtilities",
-  "version": "0.5.1",
+  "version": "0.9.0",
   "summary": "Some utility and helper classes.",
   "description": "A collection of Utility and helper classes.",
   "homepage": "https://kfxtech@bitbucket.org/kfxteam/kfxutilities_podprivate.git",
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://kfxtech@bitbucket.org/kfxteam/kfxutilities_podprivate.git",
-    "tag": "0.5.1"
+    "tag": "0.9.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "KFXUtilities/Classes/**/*"
+  "source_files": "KFXUtilities/Classes/**/*",
+  "dependencies": {
+    "KFXAdditions": [
+
+    ]
+  }
 }
