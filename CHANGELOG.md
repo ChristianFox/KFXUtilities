@@ -1,8 +1,13 @@
 
 # ChangeLog - KFXUtilities
 
+## 0.10.0
+- Updates KFXLocationTracker to make sure -requestLocationTrackingAuthorisationWithBlock: completes when status is already authorised
+- Adds -sortObjects:byLocationKey:... method to KFXGeoLocationHelper
+
 ## 0.9.0
 - Adds KFXLocationTracker
+- Updates KFXCellularViewData classes
 
 ## 0.8.0
 - Adds KFXCellularViewData, KFXCollectionViewData, KFXTableViewData, KFXSectionData, KFXCellData etc

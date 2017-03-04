@@ -321,5 +321,43 @@
     return sorted;
 }
 
+-(NSArray<id> *)sortObjects:(NSArray<id> *)objects withLocationKey:(NSString *)key byDistanceToLocation:(CLLocation *)theLocation ascending:(BOOL)ascending{
+	
+	
+	NSArray *sorted = [objects sortedArrayUsingComparator:^NSComparisonResult(id _Nonnull obj1, id _Nonnull obj2) {
+		
+		double dist1 = [theLocation distanceFromLocation:[obj1 valueForKey:key]];
+		double dist2 = [theLocation distanceFromLocation:[obj2 valueForKey:key]];
+		
+		if ( dist1 < dist2 ) {
+			return (NSComparisonResult)NSOrderedAscending;
+		} else if ( dist1 > dist2) {
+			return (NSComparisonResult)NSOrderedDescending;
+		} else {
+			return (NSComparisonResult)NSOrderedSame;
+		}
+	}];
+	
+	if (!ascending) {
+		sorted = [[sorted reverseObjectEnumerator]allObjects];
+	}
+	return sorted;
+	
+	
+}
+
+
+
 
 @end
+
+
+
+
+
+
+
+
+
+
+

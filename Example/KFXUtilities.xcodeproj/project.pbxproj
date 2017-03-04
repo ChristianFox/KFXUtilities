@@ -40,6 +40,7 @@
 		1D8684110582F7A4BEC28E66 /* Pods_KFXUtilities_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFXUtilities_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44089F6D064DC9C5F9A4D8CC /* Pods-KFXUtilities_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXUtilities_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFXUtilities_Example/Pods-KFXUtilities_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4F832C4A3A8D2ED2E470B446 /* Pods-KFXUtilities_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXUtilities_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFXUtilities_Tests/Pods-KFXUtilities_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5BAF41CB1E6AE3AF005C51EF /* NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = NOTES.md; path = ../NOTES.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KFXUtilities_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFXUtilities_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -181,6 +182,7 @@
 				9CAF628C1EDDE81D23BDFA8D /* README.md */,
 				8570D8533C1015F51D041756 /* LICENSE */,
 				DB88D6DA1DCB52E700A205EB /* CHANGELOG.md */,
+				5BAF41CB1E6AE3AF005C51EF /* NOTES.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";

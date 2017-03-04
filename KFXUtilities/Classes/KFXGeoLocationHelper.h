@@ -54,6 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSArray<CLLocation*>*)sortLocations:(NSArray<CLLocation*>*)locations
                  byDistanceToLocation:(CLLocation*)theLocation
                             ascending:(BOOL)ascending;
+-(NSArray<id> *)sortObjects:(NSArray<id> *)objects withLocationKey:(NSString *)key byDistanceToLocation:(CLLocation *)theLocation ascending:(BOOL)ascending;
 
 @end
 NS_ASSUME_NONNULL_END

@@ -74,10 +74,14 @@
 	if ([[NSBundle mainBundle]objectForInfoDictionaryKey:@"NSLocationAlwaysUsageDescription"] != nil) {
 		if ([CLLocationManager authorizationStatus] != kCLAuthorizationStatusAuthorizedAlways) {
 			[self.locationManager requestAlwaysAuthorization];
+		}else{
+			self.authorisationCallback([CLLocationManager authorizationStatus]);
 		}
 	}else if ([[NSBundle mainBundle]objectForInfoDictionaryKey:@"NSLocationWhenInUseUsageDescription"] != nil){
 		if ([CLLocationManager authorizationStatus] != kCLAuthorizationStatusAuthorizedWhenInUse) {
 			[self.locationManager requestWhenInUseAuthorization];
+		}else{
+			self.authorisationCallback([CLLocationManager authorizationStatus]);
 		}
 	}
 }
