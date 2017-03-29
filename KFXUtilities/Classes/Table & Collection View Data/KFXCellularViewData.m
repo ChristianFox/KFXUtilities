@@ -41,14 +41,19 @@
 //======================================================
 -(void)addSection:(KFXSectionData *)section{
 	[self.sections addObject:section];
+	section.cellularViewData = self;
 }
 
 -(void)addSectionsFromArray:(NSArray<KFXSectionData *> *)sections{
 	[self.sections addObjectsFromArray:sections];
+	for (KFXSectionData *section in sections) {
+		section.cellularViewData = self;
+	}
 }
 
 -(void)insertSection:(KFXSectionData *)section atIndex:(NSInteger)index{
 	[self.sections insertObject:section atIndex:index];
+	section.cellularViewData = self;
 }
 
 -(void)addCell:(KFXCellData *)cell toSectionAtIndex:(NSInteger)sectionIndex{
@@ -74,7 +79,7 @@
 }
 
 -(KFXSectionData*)sectionForIdentifier:(NSString*)identifier{
-	NSPredicate *pred = [NSPredicate predicateWithFormat:@"tag = %@",identifier];
+	NSPredicate *pred = [NSPredicate predicateWithFormat:@"identifier = %@",identifier];
 	NSArray *matching = [self.sections filteredArrayUsingPredicate:pred];
 	return matching.firstObject;
 }

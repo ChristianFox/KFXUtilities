@@ -3,6 +3,7 @@
 
 #import "KFXSectionData.h"
 #import "KFXCellData.h"
+#import "KFXCellularViewData.h"
 
 @interface KFXSectionData ()
 
@@ -44,15 +45,21 @@
 //======================================================
 -(void)addCellData:(KFXCellData *)cellData{
 	[self.cells addObject:cellData];
+	cellData.sectionData = self;
+	
 }
 
 -(void)addCellDataFromArray:(NSArray<KFXCellData *> *)cellData{
 	[self.cells addObjectsFromArray:cellData];
+	for (KFXCellData *aCell in cellData) {
+		aCell.sectionData = self;
+	}
 }
 
 -(void)insertCellData:(KFXCellData *)cellData atIndex:(NSInteger)index{
 	
 	[self.cells insertObject:cellData atIndex:index];
+	cellData.sectionData = self;
 }
 
 -(KFXCellData *)cellForTag:(NSInteger)tag{
@@ -71,6 +78,10 @@
 
 -(NSInteger)count{
 	return self.cells.count;
+}
+
+-(NSInteger)sectionIndex{
+	return [self.cellularViewData.sections indexOfObject:self];
 }
 
 //======================================================

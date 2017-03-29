@@ -7,6 +7,7 @@
 //
 
 #import "KFXCellData.h"
+#import "KFXSectionData.h"
 
 @implementation KFXCellData
 
@@ -35,7 +36,13 @@
 //======================================================
 #pragma mark - ** Primary Public Functionality **
 //======================================================
-
+-(NSIndexPath *)indexPath{
+	
+	NSInteger rowItem = [self.sectionData.cells indexOfObject:self];
+	NSInteger section = [self.sectionData sectionIndex];
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:rowItem inSection:section];
+	return indexPath;
+}
 
 //======================================================
 #pragma mark - ** Inherited Methods **

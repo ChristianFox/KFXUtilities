@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class KFXSectionData;
 
 @interface KFXCellData : NSObject
 
@@ -15,8 +16,11 @@
 @property (copy,nonatomic) NSString *reuseIdentifier;
 @property (nonatomic) NSInteger tag;
 @property (strong,nonatomic) id contents;
+@property (weak,nonatomic) KFXSectionData *sectionData;
 
 +(instancetype)cellData;
 +(instancetype)cellDataWithContents:(id)contents;
+
+-(NSIndexPath*)indexPath;
 
 @end

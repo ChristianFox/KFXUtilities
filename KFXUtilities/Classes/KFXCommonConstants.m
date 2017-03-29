@@ -21,8 +21,32 @@ double const kFeetPerKilometre = 3280.838879986877;
 double const kKilometresPerMile = 1.60934;
 double const kMilesPerKilometre = 0.621371;
 
+double const kPoundsPerKilogram = 2.2046226218487757;
+double const kKilogramsPerPound = 0.45359237;
+
+
 double const kDegreesToRadians = M_PI / 180.0;
 double const kRadiansToDegrees = 180.0 / M_PI;
 
+//--------------------------------------------------------
+#pragma mark - Device Sizes
+//--------------------------------------------------------
+CGSize const kiPhonePlusScreenSize = {414.0,736.0}; // 6+, 7+
+CGSize const kiPhoneRegularScreenSize = {375.0,667.0,}; // 6, 6s, 7
+CGSize const kiPhoneSmallScreenSize = {320.0,568.0}; // 5, 5s, 5c, SE
+CGSize const kiPhoneOriginalScreenSize = {320.0,480.0}; // 4, 4s, 3, 3g
+CGSize const kiPadMiniScreenSize = {768.0,1024.0};// Mini, 2, 3, 4 etc
+CGSize const kiPadRegularScreenSize = {768.0,1024.0};// Air, iPad 3, 4, 9.7 inch pro
+CGSize const kiPadPro12InchScreenSize = {1024.0,1366.0};// 12.9 inch pro
+
+
+//--------------------------------------------------------
+#pragma mark - Common Keys
+//--------------------------------------------------------
+NSString *const kImagePlaceholderNameKEY = @"placeholderName";
+NSString *const kImageNameKEY = @"imageName";
+NSString *const kImageKEY = @"image";
+NSString *const kTextPlaceholderKEY = @"placeholder";
+NSString *const kTextKEY = @"text";
 
 @end

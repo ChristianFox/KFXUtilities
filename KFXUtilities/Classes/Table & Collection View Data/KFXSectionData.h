@@ -1,7 +1,7 @@
 
 
 #import <Foundation/Foundation.h>
-@class KFXCellData;
+@class KFXCellData, KFXCellularViewData;
 
 @interface KFXSectionData : NSObject
 
@@ -10,6 +10,7 @@
 @property (copy,nonatomic) NSString *titleForFooter;
 @property (copy,nonatomic) NSString *identifier;
 @property (nonatomic) NSInteger tag;
+@property (weak,nonatomic) KFXCellularViewData *cellularViewData;
 
 
 +(instancetype)sectionData;
@@ -22,5 +23,6 @@
 -(KFXCellData*)cellForIdentifier:(NSString*)identifier;
 
 -(NSInteger)count;
+-(NSInteger)sectionIndex;
 
 @end

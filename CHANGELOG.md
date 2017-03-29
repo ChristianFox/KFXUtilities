@@ -1,6 +1,12 @@
 
 # ChangeLog - KFXUtilities
 
+## v0.11.0
+- Adds Device size constants
+- Adds common keys constants
+- Updates KFXCellularViewData classes so cells have a weak reference to their section and sections have a weak reference to their table/collection. Also so cells can determine their indexPath
+- Adds booeleanResultBlocks to KFXCommonDefintions
+
 ## 0.10.0
 - Updates KFXLocationTracker to make sure -requestLocationTrackingAuthorisationWithBlock: completes when status is already authorised
 - Adds -sortObjects:byLocationKey:... method to KFXGeoLocationHelper

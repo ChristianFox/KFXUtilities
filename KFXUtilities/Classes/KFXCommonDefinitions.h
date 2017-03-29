@@ -4,7 +4,11 @@
 #define KFXCommonDefinitions_h
 
 typedef void(^KFXCompletionBlock)();
+typedef void(^KFXUpdateOccuredCompletionBlock)(BOOL updateOccured);
+
 typedef void(^KFXSuccessResultBlock)(BOOL success, NSError *_Nullable error);
+typedef void(^KFXBooleanResultBlock)(BOOL boolValue);
+typedef void(^KFXBooleanAndErrorResultBlock)(BOOL boolValue, NSError *_Nullable error);
 typedef void(^KFXAnonymousObjectResultBlock)(id _Nullable object, NSError *_Nullable error);
 typedef void(^KFXNSArrayResultBlock)(NSArray *_Nullable array, NSError *_Nullable error);
 typedef void(^KFXNSDictionaryResultBlock)(NSDictionary *_Nullable dictionary, NSError *_Nullable error);
@@ -14,6 +18,7 @@ typedef void(^KFXNSStringResultBlock)(NSString *_Nullable string, NSError *_Null
 typedef void(^KFXNSNumberResultBlock)(NSNumber *_Nullable number, NSError *_Nullable error);
 typedef void(^KFXNSIntegerResultBlock)(NSInteger integer, NSError *_Nullable error);
 typedef void(^KFXNSUnsignedIntegerResultBlock)(NSUInteger uInteger, NSError *_Nullable error);
+typedef void(^KFXUIImageResultBlock)(UIImage*_Nullable image, NSError*_Nullable error);
 
 
 
