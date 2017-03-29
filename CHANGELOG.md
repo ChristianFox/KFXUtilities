@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXUtilities
 
+## v0.11.1
+- Adds @class UIImage; to KFXCommonDefintions to silence 'unknown class' warning
+
 ## v0.11.0
 - Adds Device size constants
 - Adds common keys constants

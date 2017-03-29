@@ -3,6 +3,8 @@
 #ifndef KFXCommonDefinitions_h
 #define KFXCommonDefinitions_h
 
+@class UIImage;
+
 typedef void(^KFXCompletionBlock)();
 typedef void(^KFXUpdateOccuredCompletionBlock)(BOOL updateOccured);
 
