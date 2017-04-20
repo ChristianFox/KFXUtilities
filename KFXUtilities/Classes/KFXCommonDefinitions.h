@@ -20,7 +20,8 @@ typedef void(^KFXNSStringResultBlock)(NSString *_Nullable string, NSError *_Null
 typedef void(^KFXNSNumberResultBlock)(NSNumber *_Nullable number, NSError *_Nullable error);
 typedef void(^KFXNSIntegerResultBlock)(NSInteger integer, NSError *_Nullable error);
 typedef void(^KFXNSUnsignedIntegerResultBlock)(NSUInteger uInteger, NSError *_Nullable error);
-typedef void(^KFXUIImageResultBlock)(UIImage*_Nullable image, NSError*_Nullable error);
+typedef void(^KFXNSURLResultBlock)(NSURL *_Nullable url, NSError *_Nullable error);
+typedef void(^KFXUIImageResultBlock)(UIImage *_Nullable image, NSError*_Nullable error);
 
 
 

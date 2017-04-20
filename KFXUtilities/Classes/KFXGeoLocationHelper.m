@@ -321,7 +321,10 @@
     return sorted;
 }
 
--(NSArray<id> *)sortObjects:(NSArray<id> *)objects withLocationKey:(NSString *)key byDistanceToLocation:(CLLocation *)theLocation ascending:(BOOL)ascending{
+-(NSArray<id> *)sortObjects:(NSArray<id> *)objects
+            withLocationKey:(NSString *)key
+       byDistanceToLocation:(CLLocation *)theLocation
+                  ascending:(BOOL)ascending{
 	
 	
 	NSArray *sorted = [objects sortedArrayUsingComparator:^NSComparisonResult(id _Nonnull obj1, id _Nonnull obj2) {
@@ -346,6 +349,29 @@
 	
 }
 
+-(NSArray<id> *)sortObjects:(NSArray<id> *)objects
+            withLocationKey:(NSString *)key
+       byDistanceToLocation:(CLLocation *)theLocation
+                  ascending:(BOOL)ascending
+                  distances:(NSArray<NSNumber *> *__autoreleasing  _Nonnull *)distances{
+    
+    NSArray *sorted = [self sortObjects:objects
+                        withLocationKey:key
+                   byDistanceToLocation:theLocation
+                              ascending:ascending];
+    if (distances != nil) {
+        
+        NSMutableArray *mutArray = [NSMutableArray arrayWithCapacity:sorted.count];
+        for (id anObj in sorted) {
+            
+            double dist = [theLocation distanceFromLocation:[anObj valueForKey:key]];
+            [mutArray addObject:@(dist)];
+
+        }
+        *distances = [mutArray copy];
+    }
+    return sorted;
+}
 
 
 

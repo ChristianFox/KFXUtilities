@@ -160,6 +160,9 @@
 
 -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
 	
+	if (status == kCLAuthorizationStatusNotDetermined) {
+		return;
+	}
 	if ([self.delegate respondsToSelector:@selector(locationTracker:didChangeAuthrizationStatus:)]) {
 		[self.delegate locationTracker:self didChangeAuthrizationStatus:status];
 	}

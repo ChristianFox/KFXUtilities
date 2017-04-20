@@ -1,6 +1,10 @@
 
 # ChangeLog - KFXUtilities
 
+## 0.12.0
+- KFXLocationTracker: Adds conditional to -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status so that if status is not determined it does nothing (no delegate method call or block callback)
+- KFXGeoLocationHelper: Adds sortObjects:withLocationKey:byDistanceToLocation:ascending:distances:
+
 ## v0.11.1
 - Adds @class UIImage; to KFXCommonDefintions to silence 'unknown class' warning
 
