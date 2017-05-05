@@ -1,6 +1,8 @@
 
 
 #import <Foundation/Foundation.h>
+// Cocoa Frameworks
+@import CoreGraphics;
 
 @interface KFXCommonConstants : NSObject
 

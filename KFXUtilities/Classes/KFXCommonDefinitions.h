@@ -16,6 +16,7 @@ typedef void(^KFXNSArrayResultBlock)(NSArray *_Nullable array, NSError *_Nullabl
 typedef void(^KFXNSDictionaryResultBlock)(NSDictionary *_Nullable dictionary, NSError *_Nullable error);
 typedef void(^KFXNSSetResultBlock)(NSSet *_Nullable set, NSError *_Nullable error);
 typedef void(^KFXNSDataResultBlock)(NSData *_Nullable data, NSError *_Nullable error);
+typedef void(^KFXNSDateResultBlock)(NSDate *_Nullable date, NSError *_Nullable error);
 typedef void(^KFXNSStringResultBlock)(NSString *_Nullable string, NSError *_Nullable error);
 typedef void(^KFXNSNumberResultBlock)(NSNumber *_Nullable number, NSError *_Nullable error);
 typedef void(^KFXNSIntegerResultBlock)(NSInteger integer, NSError *_Nullable error);
