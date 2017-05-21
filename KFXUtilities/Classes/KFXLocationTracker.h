@@ -62,7 +62,10 @@ typedef void(^KFXLocationUpdatesBlock)(NSArray<CLLocation*> *locations);
  **/
 -(void)locationUpdatesWithBlock:(KFXLocationUpdatesBlock)callbackBlock;
 
-
+//--------------------------------------------------------
+#pragma mark Helpers
+//--------------------------------------------------------
++(NSString*)descriptionForRejectionReason:(KFXLocationRejectionReason)rejectionReason;
 
 
 @end

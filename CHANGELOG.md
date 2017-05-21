@@ -1,6 +1,10 @@
 
 # ChangeLog - KFXUtilities
 
+## 0.14.0
+- Adds +descriptionForRejectionReason: to KFXLocationTracker
+- Adds 4 UIKit size constants (nav bar x2, status bar, tab bar)
+
 ## 0.13.0
 - Adds NSDate result block to KFXCommonDefinitions
 - Imports CoreGraphics module into KFXCommonConstants

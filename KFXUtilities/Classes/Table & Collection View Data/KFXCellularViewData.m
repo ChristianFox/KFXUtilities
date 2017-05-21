@@ -52,6 +52,7 @@
 }
 
 -(void)insertSection:(KFXSectionData *)section atIndex:(NSInteger)index{
+
 	[self.sections insertObject:section atIndex:index];
 	section.cellularViewData = self;
 }
@@ -110,10 +111,13 @@
 
 -(KFXCellData *)cellForIndexPath:(NSIndexPath *)indexPath{
 	KFXSectionData *section = self.sections[indexPath.section];
-	KFXCellData *cell = section.cells[indexPath.row];
+	KFXCellData *cell;
+	if (indexPath.row < section.cells.count) {
+		cell = section.cells[indexPath.row];
+	}
+	
 	return cell;
 }
-
 -(NSInteger)count{
 	return self.sections.count;
 }

@@ -39,6 +39,13 @@ CGSize const kiPadMiniScreenSize = {768.0,1024.0};// Mini, 2, 3, 4 etc
 CGSize const kiPadRegularScreenSize = {768.0,1024.0};// Air, iPad 3, 4, 9.7 inch pro
 CGSize const kiPadPro12InchScreenSize = {1024.0,1366.0};// 12.9 inch pro
 
+//--------------------------------------------------------
+#pragma mark UI Kit dimensions
+//--------------------------------------------------------
+CGFloat const kUIKitStatusBarHeight = 20.0;
+CGFloat const kUIKitNavigationBarStandardHeight = 44.0;
+CGFloat const kUIKitNavigationBarLandscapeReducedHeight = 32.0;
+CGFloat const kUIKitTabBarHeight = 49.0;
 
 //--------------------------------------------------------
 #pragma mark - Common Keys

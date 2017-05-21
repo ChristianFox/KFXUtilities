@@ -42,6 +42,14 @@ extern CGSize const kiPadPro12InchScreenSize; // 12.9 inch pro
 
 
 //--------------------------------------------------------
+#pragma mark UI Kit dimensions
+//--------------------------------------------------------
+extern CGFloat const kUIKitStatusBarHeight;
+extern CGFloat const kUIKitNavigationBarStandardHeight;
+extern CGFloat const kUIKitNavigationBarLandscapeReducedHeight;
+extern CGFloat const kUIKitTabBarHeight;
+
+//--------------------------------------------------------
 #pragma mark - Common Keys
 //--------------------------------------------------------
 extern NSString *const kImagePlaceholderNameKEY;

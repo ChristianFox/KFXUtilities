@@ -92,6 +92,41 @@
 	[self.locationManager startUpdatingLocation];
 }
 
+//--------------------------------------------------------
+#pragma mark Helpers
+//--------------------------------------------------------
++(NSString*)descriptionForRejectionReason:(KFXLocationRejectionReason)rejectionReason{
+    
+    NSString *rejectionDescription;
+    switch (rejectionReason) {
+        case KFXLocationAccepted:{
+            rejectionDescription = @"NOT rejected, was accepted";
+            break;
+        }
+        case KFXLocationRejectionReasonUndefined:{
+            rejectionDescription = @"Undefined";
+            break;
+        }
+        case KFXLocationRejectionReasonOlderThanLastKnownLocation:{
+            rejectionDescription = @"Older than last known location";
+            break;
+        }
+        case KFXLocationRejectionReasonOlderThanMaxAge:{
+            rejectionDescription = @"Older than max age";
+            break;
+        }
+        case KFXLocationRejectionReasonLessAccurateThanMinAccuracy:{
+            rejectionDescription = @"Less accurate than min accuracy";
+            break;
+        }
+        default:
+            NSAssert(NO,@"Hit default case of a switch statement. %s",__PRETTY_FUNCTION__);
+            
+            break;
+    }
+    return rejectionDescription;
+}
+
 //======================================================
 #pragma mark - ** Inherited Methods **
 //======================================================
