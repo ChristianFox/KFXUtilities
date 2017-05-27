@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXUtilities
 
+## 0.15.1
+- Updates Licence file
+
 ## 0.15.0
 - Updates Licence file
 
