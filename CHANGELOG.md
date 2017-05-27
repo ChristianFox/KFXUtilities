@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXUtilities
 
+## 0.15.0
+- Updates Licence file
+
 ## 0.14.0
 - Adds +descriptionForRejectionReason: to KFXLocationTracker
 - Adds 4 UIKit size constants (nav bar x2, status bar, tab bar)
