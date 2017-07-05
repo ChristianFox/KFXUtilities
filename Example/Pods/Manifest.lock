@@ -1,6 +1,6 @@
 PODS:
   - KFXAdditions (0.21.0)
-  - KFXUtilities (0.9.0):
+  - KFXUtilities (1.0.0):
     - KFXAdditions
 
 DEPENDENCIES:
@@ -9,12 +9,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   KFXUtilities:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   KFXAdditions: 686cf6154f269e8fb2ec83af1de92f764d238cb0
-  KFXUtilities: b0ddd191e94c0ea8325792fa42ca7531f4ff0c6b
+  KFXUtilities: 705ef325b2a914a07c03f2aebad6bf370efcbd46
 
 PODFILE CHECKSUM: c6fe212778017412b226bbbb6cef102894c2839f
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

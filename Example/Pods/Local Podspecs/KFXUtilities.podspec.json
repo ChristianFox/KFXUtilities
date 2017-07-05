@@ -1,11 +1,11 @@
 {
   "name": "KFXUtilities",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "summary": "Some utility and helper classes.",
   "description": "A collection of Utility and helper classes.",
   "homepage": "https://kfxtech@bitbucket.org/kfxteam/kfxutilities_podprivate.git",
   "license": {
-    "type": "MIT",
+    "type": "Commercial",
     "file": "LICENSE"
   },
   "authors": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://kfxtech@bitbucket.org/kfxteam/kfxutilities_podprivate.git",
-    "tag": "0.9.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
