@@ -1,7 +1,9 @@
 
 # ChangeLog - KFXUtilities
 
-## 1.0.0
+## v1.0.0.1 - switches to new bb repo
+
+## v1.0.0
 - Removes KFXPhotoPickerManager, KFXLocationTracker and KFXGeoLocationHelper
 
 ## 0.15.1
