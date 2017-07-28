@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXUtilities
 
+## v1.1.0 progress blocks
+- Adds new block definitions for progress and fixes a couple of misspelings
+
 ## v1.0.0.1 - switches to new bb repo
 
 ## v1.0.0
