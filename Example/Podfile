@@ -3,20 +3,17 @@ use_frameworks!
 target 'KFXUtilities_Example' do
   pod 'KFXUtilities', :path => '../'
   
-  
   ## Sources
   ### If using private pods
-  source 'https://bitbucket.org/kfxteam/kfxtech_cocoapodsspec'
+  source 'https://kfxtech@bitbucket.org/kfx_pods/kfxsharedspecs'
   
   pod 'KFXAdditions'
   
   ### If using from trunk
   source 'http://github.com/Cocoapods/Specs.git'
 
-
   target 'KFXUtilities_Tests' do
     inherit! :search_paths
-
     
   end
 end

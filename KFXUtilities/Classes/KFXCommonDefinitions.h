@@ -13,6 +13,26 @@
 @import CoreGraphics;
 @class UIImage;
 
+//-----------------------------------
+// Directions
+//-----------------------------------
+typedef NS_ENUM (NSInteger, KFXCardinalDirection){
+    KFXCardinalDirectionUndefined = 0,
+    KFXCardinalDirectionNorth,
+    KFXCardinalDirectionEast,
+    KFXCardinalDirectionSouth,
+    KFXCardinalDirectionWest
+};
+
+typedef NS_ENUM (NSInteger, KFXDirection) {
+    KFXDirectionUndefined = 0,
+    KFXDirectionUp,
+    KFXDirectionRight,
+    KFXDirectionDown,
+    KFXDirectionLeft
+};
+
+
 
 typedef void(^KFXCompletionBlock)();
 

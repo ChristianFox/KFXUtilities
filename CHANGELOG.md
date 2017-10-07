@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXUtilities
 
+## v1.2.0 Adds KFXGeometry
+
 ## v1.1.0 progress blocks
 - Adds new block definitions for progress and fixes a couple of misspelings
 

@@ -40,12 +40,15 @@ extern double const kRadiansToDegrees;
 //--------------------------------------------------------
 #pragma mark - Device Sizes
 //--------------------------------------------------------
-extern CGSize const kiPhonePlusScreenSize; // 6+, 7+
-extern CGSize const kiPhoneRegularScreenSize; // 6, 6s, 7
+extern CGSize const kiPhoneXScreenSize; // X
+extern CGSize const kiPhonePlusScreenSize; // 6+, 7+, 8+
+extern CGSize const kiPhoneRegularScreenSize; // 6, 6s, 7, 8
 extern CGSize const kiPhoneSmallScreenSize; // 5, 5s, 5c, SE
 extern CGSize const kiPhoneOriginalScreenSize; // 4, 4s, 3, 3g
 extern CGSize const kiPadMiniScreenSize; // Mini, 2, 3, 4 etc
 extern CGSize const kiPadRegularScreenSize; // Air, iPad 3, 4, 9.7 inch pro
+extern CGSize const kiPadPro9InchScreenSize; // 9.7 inch pro
+extern CGSize const kiPadPro10InchScreenSize; // 10.5 inch pro
 extern CGSize const kiPadPro12InchScreenSize; // 12.9 inch pro
 
 

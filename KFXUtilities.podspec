@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KFXUtilities'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'Some utility and helper classes.'
 
   s.description      = <<-DESC
