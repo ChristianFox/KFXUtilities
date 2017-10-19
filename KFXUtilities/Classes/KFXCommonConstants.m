@@ -46,7 +46,10 @@ CGSize const kiPadMiniScreenSize = {768.0,1024.0};// Mini, 2, 3, 4 etc
 CGSize const kiPadRegularScreenSize = {768.0,1024.0};// Air, iPad 3, 4, 9.7 inch pro
 CGSize const kiPadPro9InchScreenSize = {1024.0,768.0}; // 9.7 inch pro
 CGSize const kiPadPro10InchScreenSize = {834.0,1112.0}; // 10.5 inch pro
-CGSize const kiPadPro12InchScreenSize = {1024.0,1366.0};// 12.9 inch pro
+CGSize const kiPadPro12InchScreenSize = {1024.0,1366.0}; // 12.9 inch pro
+CGSize const kAppleWatch38mmScreenSize = {272.0,340.0}; // 38mm watch
+CGSize const kAppleWatch42mmScreenSize = {312.0,390.0}; // 42mm watch
+
 
 //--------------------------------------------------------
 #pragma mark UI Kit dimensions

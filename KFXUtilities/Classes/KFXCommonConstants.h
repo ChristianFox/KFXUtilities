@@ -38,7 +38,7 @@ extern double const kRadiansToDegrees;
 
 
 //--------------------------------------------------------
-#pragma mark - Device Sizes
+#pragma mark - Device Screen Sizes
 //--------------------------------------------------------
 extern CGSize const kiPhoneXScreenSize; // X
 extern CGSize const kiPhonePlusScreenSize; // 6+, 7+, 8+
@@ -50,7 +50,8 @@ extern CGSize const kiPadRegularScreenSize; // Air, iPad 3, 4, 9.7 inch pro
 extern CGSize const kiPadPro9InchScreenSize; // 9.7 inch pro
 extern CGSize const kiPadPro10InchScreenSize; // 10.5 inch pro
 extern CGSize const kiPadPro12InchScreenSize; // 12.9 inch pro
-
+extern CGSize const kAppleWatch38mmScreenSize; // 38mm watch
+extern CGSize const kAppleWatch42mmScreenSize; // 42mm watch
 
 //--------------------------------------------------------
 #pragma mark UI Kit dimensions

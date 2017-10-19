@@ -8,10 +8,12 @@
  *
  ************************************/
 
-#ifndef KFXCommonDefinitions_h
-#define KFXCommonDefinitions_h
+
+@import Foundation;
 @import CoreGraphics;
 @class UIImage;
+
+
 
 //-----------------------------------
 // Directions
@@ -26,14 +28,62 @@ typedef NS_ENUM (NSInteger, KFXCardinalDirection){
 
 typedef NS_ENUM (NSInteger, KFXDirection) {
     KFXDirectionUndefined = 0,
-    KFXDirectionUp,
-    KFXDirectionRight,
-    KFXDirectionDown,
-    KFXDirectionLeft
+    KFXDirectionTopToBottom,
+    KFXDirectionRightToLeft,
+    KFXDirectionBottomToTop,
+    KFXDirectionLeftToRight,
+    KFXDirectionTopLeftToBottomRight,
+    KFXDirectionTopRightToBottomLeft,
+    KFXDirectionBottomLeftToTopRight,
+    KFXDirectionBottomRightToTopLeft
+};
+
+
+//-----------------------------------
+// Edge
+//-----------------------------------
+typedef NS_ENUM (NSInteger, KFXEdge) {
+    KFXEdgeUndefined = 0,
+    KFXEdgeUp,
+    KFXEdgeRight,
+    KFXEdgeDown,
+    KFXEdgeLeft
+};
+
+
+//-----------------------------------
+// Device
+//-----------------------------------
+typedef NS_ENUM (NSInteger, KFXDeviceScreenSize){
+    KFXDeviceScreenSizeUndefined = 0,
+    KFXDeviceScreenSizeiPhoneOriginal,
+    KFXDeviceScreenSizeiPhoneSmall,
+    KFXDeviceScreenSizeiPhoneRegular,
+    KFXDeviceScreenSizeiPhonePlus,
+    KFXDeviceScreenSizeiPhoneX,
+    KFXDeviceScreenSizeiPadMini,
+    KFXDeviceScreenSizeiPadRegular,
+    KFXDeviceScreenSizeiPadPro9Inch,
+    KFXDeviceScreenSizeiPadPro10Inch,
+    KFXDeviceScreenSizeiPadPro12Inch,
+    KFXDeviceScreenSizeAppleWatch38mm,
+    KFXDeviceScreenSizeAppleWatch42mm
+};
+
+typedef NS_ENUM(NSUInteger, KFXDeviceFamily) {
+    KFXDeviceFamilyUndefined = 0,
+    KFXDeviceFamilyiPhone,
+    KFXDeviceFamilyiPod,
+    KFXDeviceFamilyiPad,
+    KFXDeviceFamilyAppleTV,
+    KFXDeviceFamilyAppleWatch,
 };
 
 
 
+//-----------------------------------
+// Completion Block with no params
+//-----------------------------------
 typedef void(^KFXCompletionBlock)();
 
 //-----------------------------------
@@ -44,6 +94,8 @@ typedef void(^KFXUpdateOccurredResultBlock)(BOOL updateOccured, NSError *_Nullab
 typedef void(^KFXSuccessResultBlock)(BOOL success, NSError *_Nullable error);
 typedef void(^KFXProgressBlock)(CGFloat progress);
 typedef void(^KFXProgressAndMessageBlock)(CGFloat progress, NSString *_Nullable message);
+typedef void(^KFXSyncComparisonArraysBlock)(NSArray *_Nullable created, NSArray *_Nullable updated, NSArray *_Nullable deleted);
+
 
 //-----------------------------------
 // Generic Primitives
@@ -52,6 +104,11 @@ typedef void(^KFXBooleanResultBlock)(BOOL boolValue);
 typedef void(^KFXBooleanAndErrorResultBlock)(BOOL boolValue, NSError *_Nullable error);
 typedef void(^KFXNSIntegerResultBlock)(NSInteger integer, NSError *_Nullable error);
 typedef void(^KFXNSUnsignedIntegerResultBlock)(NSUInteger uInteger, NSError *_Nullable error);
+typedef void(^KFXFloatResultBlock)(float aFloat, NSError *_Nullable error);
+typedef void(^KFXDoubleResultBlock)(double aDouble, NSError *_Nullable error);
+typedef void(^KFXCGFloatResultBlock)(CGFloat aCGFloat, NSError *_Nullable error);
+typedef void(^KFXIntResultBlock)(int anInt, NSError *_Nullable error);
+
 
 //-----------------------------------
 // Objects
@@ -69,4 +126,40 @@ typedef void(^KFXUIImageResultBlock)(UIImage *_Nullable image, NSError*_Nullable
 
 
 
-#endif /* KFXCommonDefinitions_h */
+
+
+
+@interface KFXCommonDefinitions : NSObject
+
+
+//-----------------------------------
+// Strings from Enums
+//-----------------------------------
+NSString*_Nullable KFXCardinalDirectionString(KFXCardinalDirection direction);
+NSString*_Nullable KFXDirectionString(KFXDirection direction);
+NSString*_Nullable KFXEdgeString(KFXEdge edge);
+NSString*_Nullable KFXDeviceScreenSizeString(KFXDeviceScreenSize screenSize);
+NSString*_Nullable KFXDeviceFamilyString(KFXDeviceFamily family);
+
+
+
+
+
+
+
+
+
+
+@end
+
+
+
+
+
+
+
+
+
+
+
+

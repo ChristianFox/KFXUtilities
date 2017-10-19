@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXUtilities
 
+### v1.3.0 - Adds more definitions & constants
+
 ## v1.2.0 Adds KFXGeometry
 
 ## v1.1.0 progress blocks
