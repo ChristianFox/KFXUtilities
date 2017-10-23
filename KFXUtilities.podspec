@@ -2,11 +2,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KFXUtilities'
-  s.version          = '1.3.0'
+  s.version          = '2.0.0'
   s.summary          = 'Some utility and helper classes.'
 
   s.description      = <<-DESC
-A collection of Utility and helper classes.
+A collection of Utility and helper classes. (much smaller than it once was as most classes have been moved into their own pods)
                        DESC
 
   s.homepage         = 'https://kfxtech@bitbucket.org/kfx_pods/kfxutilities.git'
@@ -15,5 +15,4 @@ A collection of Utility and helper classes.
   s.source           = { :git => 'https://kfxtech@bitbucket.org/kfx_pods/kfxutilities.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'KFXUtilities/Classes/**/*'
-  s.dependency 'KFXAdditions'
 end

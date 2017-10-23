@@ -17,7 +17,7 @@
 #define dequalzero(a) (fabs(a) < DBL_EPSILON)
 
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface KFXMaths : NSObject
 
