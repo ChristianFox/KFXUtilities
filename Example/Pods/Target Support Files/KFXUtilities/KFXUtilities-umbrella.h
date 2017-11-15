@@ -12,6 +12,7 @@
 
 #import "KFXFileHelper.h"
 #import "KFXGeometry.h"
+#import "KFXMailHelper.h"
 #import "KFXMaths.h"
 #import "KFXUtilities.h"
 

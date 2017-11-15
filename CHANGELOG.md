@@ -1,6 +1,10 @@
 
 # ChangeLog - KFXUtilities
 
+### v2.1.0
+- Adds CLAMP method to KFXMaths
+- Adds KFXMailHelper class
+
 ### v2.0.0 - Removes KFXCellularViewData classes into new pod 'KFXCellularViewData', Removes KFXCommonConstants and KFXCommonDefintions into new pod 'KFXCore'
 
 ### v1.3.0 - Adds more definitions & constants

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5130DF54568980399B404EDF /* Pods_KFXUtilities_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8684110582F7A4BEC28E66 /* Pods_KFXUtilities_Example.framework */; };
 		5B5FAA511F88DEEA0065372F /* KFXGeometryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5FAA501F88DEEA0065372F /* KFXGeometryTests.m */; };
+		5BE9C6CF1FA72005004209BC /* KFXMathsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE9C6CE1FA72005004209BC /* KFXMathsTests.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -42,6 +43,7 @@
 		4F832C4A3A8D2ED2E470B446 /* Pods-KFXUtilities_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFXUtilities_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFXUtilities_Tests/Pods-KFXUtilities_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5B5FAA501F88DEEA0065372F /* KFXGeometryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFXGeometryTests.m; sourceTree = "<group>"; };
 		5BAF41CB1E6AE3AF005C51EF /* NOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = NOTES.md; path = ../NOTES.md; sourceTree = "<group>"; };
+		5BE9C6CE1FA72005004209BC /* KFXMathsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFXMathsTests.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KFXUtilities_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFXUtilities_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				5B5FAA501F88DEEA0065372F /* KFXGeometryTests.m */,
+				5BE9C6CE1FA72005004209BC /* KFXMathsTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5FAA511F88DEEA0065372F /* KFXGeometryTests.m in Sources */,
+				5BE9C6CF1FA72005004209BC /* KFXMathsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

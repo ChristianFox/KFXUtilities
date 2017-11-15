@@ -14,5 +14,8 @@
 
 #import <KFXUtilities/KFXMaths.h>
 #import <KFXUtilities/KFXGeometry.h>
+#import <KFXUtilities/KFXFileHelper.h>
+#import <KFXUtilities/KFXMailHelper.h>
+
 
 #endif /* KFXUtilities_h */

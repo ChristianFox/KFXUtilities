@@ -15,8 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KFXFileHelper : NSObject
 
+//--------------------------------------------------------
+#pragma mark Initilisers
+//--------------------------------------------------------
 +(instancetype)fileHelper;
 
+
+//--------------------------------------------------------
+#pragma mark MIME Type
+//--------------------------------------------------------
 -(NSString*)kfx_mimeTypeForFilePath:(NSString*)filePath;
 -(NSString*)kfx_uniformTypeIdentifierForURLResponse:(NSURLResponse*)response;
 
