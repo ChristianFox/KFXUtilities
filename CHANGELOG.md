@@ -1,6 +1,9 @@
 
 # ChangeLog - KFXUtilities
 
+### v2.2.0 | Move to github and make cocoapod public
+- Update  Licence, Podspec
+
 ### v2.1.0
 - Adds CLAMP method to KFXMaths
 - Adds KFXMailHelper class
