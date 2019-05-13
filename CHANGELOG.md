@@ -1,6 +1,10 @@
 
 # ChangeLog - KFXUtilities
 
+### v2.3.0
+- Adds more methods to KFXGeometry
+- Adds Radians <> degrees conversions
+
 ### v2.2.0 | Move to github and make cocoapod public
 - Update  Licence, Podspec
 
