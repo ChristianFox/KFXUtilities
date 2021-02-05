@@ -1,0 +1,45 @@
+BUILD_CONFIGURATIONS:
+  Debug: :debug
+  Release: :release
+CACHE_KEYS:
+  KFXCore:
+    BUILD_SETTINGS_CHECKSUM:
+      KFXCore:
+        :debug: cab5590a46f72c22e0a2ff8e87f24a1b
+        :release: cab5590a46f72c22e0a2ff8e87f24a1b
+    CHECKSUM: ac4ee93c47c41197933a52d3a6889fbf10ca3de2
+    PROJECT_NAME: KFXCore
+    SPECS:
+      - KFXCore (2.2.0)
+  KFXUtilities:
+    BUILD_SETTINGS_CHECKSUM:
+      KFXUtilities:
+        :debug: 86fd4bb978a389a3aff9254618ee578b
+        :release: 86fd4bb978a389a3aff9254618ee578b
+    CHECKSUM: dbffa43651082400fa02a8f339f53aeab56c75d1
+    FILES:
+      - "../../KFXUtilities/Classes/KFXFileHelper.h"
+      - "../../KFXUtilities/Classes/KFXFileHelper.m"
+      - "../../KFXUtilities/Classes/KFXGeometry.h"
+      - "../../KFXUtilities/Classes/KFXGeometry.m"
+      - "../../KFXUtilities/Classes/KFXMailHelper.h"
+      - "../../KFXUtilities/Classes/KFXMailHelper.m"
+      - "../../KFXUtilities/Classes/KFXMaths.h"
+      - "../../KFXUtilities/Classes/KFXMaths.m"
+      - "../../KFXUtilities/Classes/KFXUtilities.h"
+      - "../../LICENSE"
+      - "../../README.md"
+    PROJECT_NAME: KFXUtilities
+    SPECS:
+      - KFXUtilities (2.4.0)
+  Pods-KFXUtilities_Example:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 470f5706b77f25bf65e4b6037cc997d4
+      Release: 470f5706b77f25bf65e4b6037cc997d4
+  Pods-KFXUtilities_Tests:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 23207cc03b14f699059adac8bd792583
+      Release: 23207cc03b14f699059adac8bd792583
+OBJECT_VERSION: 46
+PLUGINS:
+  {}

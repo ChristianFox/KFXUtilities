@@ -1,19 +1,34 @@
 /********************************
  *
- * Copyright © 2016-2017 Christian Fox
- * All Rights Reserved
- * Full licence details can be found in the file 'LICENSE' or in the Pods-{yourProjectName}-acknowledgements.markdown
+ * KFXCore https://github.com/ChristianFox/KFXCore
  *
- * This file is included with KFXUtilities
+ * Copyright (c) 2016-2018 ChristianFox <christianfox@kfxtech.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * This file is included with KFXCore
  *
  ************************************/
-
 
 @import Foundation;
 @import CoreGraphics;
 @class UIImage;
-
-
 
 //-----------------------------------
 // Directions
@@ -38,7 +53,6 @@ typedef NS_ENUM (NSInteger, KFXDirection) {
     KFXDirectionBottomRightToTopLeft
 };
 
-
 //-----------------------------------
 // Edge
 //-----------------------------------
@@ -50,7 +64,6 @@ typedef NS_ENUM (NSInteger, KFXEdge) {
     KFXEdgeLeft
 };
 
-
 //-----------------------------------
 // Device
 //-----------------------------------
@@ -60,15 +73,39 @@ typedef NS_ENUM (NSInteger, KFXDeviceScreenSize){
     KFXDeviceScreenSizeiPhoneSmall,
     KFXDeviceScreenSizeiPhoneRegular,
     KFXDeviceScreenSizeiPhonePlus,
-    KFXDeviceScreenSizeiPhoneX,
-    KFXDeviceScreenSizeiPadMini,
+    KFXDeviceScreenSizeiPhoneXRegular,
+    KFXDeviceScreenSizeiPhoneXLarge,
     KFXDeviceScreenSizeiPadRegular,
     KFXDeviceScreenSizeiPadPro9Inch,
     KFXDeviceScreenSizeiPadPro10Inch,
     KFXDeviceScreenSizeiPadPro12Inch,
     KFXDeviceScreenSizeAppleWatch38mm,
-    KFXDeviceScreenSizeAppleWatch42mm
+    KFXDeviceScreenSizeAppleWatch40mm,
+    KFXDeviceScreenSizeAppleWatch42mm,
+    KFXDeviceScreenSizeAppleWatch44mm
 };
+
+typedef NS_ENUM (NSInteger, KFXDeviceResolution){
+    KFXDeviceResolutionUndefined = 0,
+    KFXDeviceResolutioniPhoneOriginalNonRetina,
+    KFXDeviceResolutioniPhoneOriginalRetina,
+    KFXDeviceResolutioniPhoneSmall,
+    KFXDeviceResolutioniPhoneRegular,
+    KFXDeviceResolutioniPhonePlus,
+    KFXDeviceResolutioniPhoneX,
+    KFXDeviceResolutioniPhoneXr,
+    KFXDeviceResolutioniPhoneXMax,
+    KFXDeviceResolutioniPadOriginal,
+    KFXDeviceResolutioniPadRegular,
+    KFXDeviceResolutioniPadPro9Inch,
+    KFXDeviceResolutioniPadPro10Inch,
+    KFXDeviceResolutioniPadPro12Inch,
+    KFXDeviceResolutionAppleWatch38mm,
+    KFXDeviceResolutionAppleWatch40mm,
+    KFXDeviceResolutionAppleWatch42mm,
+    KFXDeviceResolutionAppleWatch44mm
+};
+
 
 typedef NS_ENUM(NSUInteger, KFXDeviceFamily) {
     KFXDeviceFamilyUndefined = 0,
@@ -80,11 +117,10 @@ typedef NS_ENUM(NSUInteger, KFXDeviceFamily) {
 };
 
 
-
 //-----------------------------------
 // Completion Block with no params
 //-----------------------------------
-typedef void(^KFXCompletionBlock)();
+typedef void(^KFXCompletionBlock)(void);
 
 //-----------------------------------
 // Happenings
@@ -94,7 +130,10 @@ typedef void(^KFXUpdateOccurredResultBlock)(BOOL updateOccured, NSError *_Nullab
 typedef void(^KFXSuccessResultBlock)(BOOL success, NSError *_Nullable error);
 typedef void(^KFXProgressBlock)(CGFloat progress);
 typedef void(^KFXProgressAndMessageBlock)(CGFloat progress, NSString *_Nullable message);
-typedef void(^KFXSyncComparisonArraysBlock)(NSArray *_Nullable created, NSArray *_Nullable updated, NSArray *_Nullable deleted);
+typedef void(^KFXSyncResultArraysBlock)(NSArray *_Nullable created, NSArray *_Nullable updated, NSArray *_Nullable deleted);
+typedef void(^KFXSyncResultDictionarysBlock)(NSDictionary *_Nullable created, NSDictionary *_Nullable updated, NSDictionary *_Nullable deleted);
+typedef void(^KFXSyncResultAnonObjectsBlock)(id _Nullable created, id _Nullable updated, id  _Nullable deleted);
+typedef void(^KFXNetworkResponseResultBlock)(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable error);
 
 
 //-----------------------------------
@@ -127,8 +166,6 @@ typedef void(^KFXUIImageResultBlock)(UIImage *_Nullable image, NSError*_Nullable
 
 
 
-
-
 @interface KFXCommonDefinitions : NSObject
 
 
@@ -139,11 +176,8 @@ NSString*_Nullable KFXCardinalDirectionString(KFXCardinalDirection direction);
 NSString*_Nullable KFXDirectionString(KFXDirection direction);
 NSString*_Nullable KFXEdgeString(KFXEdge edge);
 NSString*_Nullable KFXDeviceScreenSizeString(KFXDeviceScreenSize screenSize);
+NSString*_Nullable KFXDeviceResolutionString(KFXDeviceResolution resolution);
 NSString*_Nullable KFXDeviceFamilyString(KFXDeviceFamily family);
-
-
-
-
 
 
 

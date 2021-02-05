@@ -1,6 +1,8 @@
 
 # ChangeLog - KFXUtilities
 
+### v2.4.0 | Update to use newish cocoapods options incremental_installation and generate_multiple_pod_projects. Switches to using cocopods CDN
+
 ### v2.3.0
 - Adds more methods to KFXGeometry
 - Adds Radians <> degrees conversions

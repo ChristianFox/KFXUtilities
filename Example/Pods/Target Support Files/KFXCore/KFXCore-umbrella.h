@@ -12,6 +12,7 @@
 
 #import "KFXCommonConstants.h"
 #import "KFXCommonDefinitions.h"
+#import "KFXCore.h"
 
 FOUNDATION_EXPORT double KFXCoreVersionNumber;
 FOUNDATION_EXPORT const unsigned char KFXCoreVersionString[];
